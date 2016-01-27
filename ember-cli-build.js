@@ -19,6 +19,31 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+  app.import('vendor/css/animate.css');
+  app.import('vendor/css/bootstrap.css');
+  app.import('vendor/css/calendar.css');
+  app.import('vendor/css/camera.css');
+  app.import('vendor/css/dark.css');
+  app.import('vendor/css/editor.css');
+  app.import('vendor/css/faq.css');
+  app.import('vendor/css/font-icons.css');
+  app.import('vendor/css/fonts.css');
+  app.import('vendor/css/ie9.css');
+  app.import('vendor/css/magnific-popup.css');
+  app.import('vendor/css/nivo-slider.css');
+  app.import('vendor/css/nouislider.css');
+  app.import('vendor/css/nouislider.min.css');
+  app.import('vendor/css/nouislider.pips.css');
+  app.import('vendor/css/pages-icons.css');
+  app.import('vendor/css/pages.css');
+  app.import('vendor/css/pages.min.css');
+  app.import('vendor/css/reset.css');
+  app.import('vendor/css/responsive.css');
+  app.import('vendor/css/style-empresas.css');
+  app.import('vendor/css/style.css');
+  app.import('vendor/css/style.min.css');
+  app.import('vendor/css/vmap.css');
+  app.import('vendor/css/windows.chrome.fix.css');
 
   return app.toTree();
 };
