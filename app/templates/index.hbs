@@ -9,8 +9,8 @@
          <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
                         <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
                             <ul class="cd-switcher">
-                                <li><a href="#0">Ingresar</a></li>
-                                <li><a href="#0">Registrarse</a></li>
+                                <li><a href="javascript:;">Ingresar</a></li>
+                                <li><a href="javascript:;">Registrarse</a></li>
                             </ul>
 
                             <div id="cd-login"> <!-- log in form -->
@@ -24,7 +24,7 @@
                                     <p class="fieldset">
                                         <label class="image-replace cd-password" for="signin-password">Contraseña</label>
                                         <input class="full-width has-padding has-border" id="signin-password" type="password"   placeholder="Contraseña">
-                                        <a href="#0" class="hide-password">Show</a>
+                                        <a href="javascript:;" class="hide-password">Show</a>
                                         <span class="cd-error-message">¡Error tu contraseña es equivocada!</span>
                                     </p>
 
@@ -41,8 +41,8 @@
                                     </p>
                                 </form>
                                 
-                                <p class="cd-form-bottom-message"><a href="#0">¿Olvidaste tu contraseña?</a></p>
-                                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                                <p class="cd-form-bottom-message"><a href="javascript:;">¿Olvidaste tu contraseña?</a></p>
+                                <!-- <a href="javascript:;" class="cd-close-form">Close</a> -->
                             </div> <!-- cd-login -->
 
                             <div id="cd-signup"> <!-- sign up form -->
@@ -67,20 +67,20 @@
                                     <p class="fieldset">
                                         <label class="image-replace cd-password" for="signup-password">Contraseña</label>
                                         <input class="full-width has-padding has-border" id="signup-password" type="password"   placeholder="Contraseña">
-                                        <a href="#0" class="hide-password">Show</a>
+                                        <a href="javascript:;" class="hide-password">Show</a>
                                         <span class="cd-error-message">¡Error tu contraseña tiene que ser al menos 8 caracteres!</span>
                                     </p>
 
                                     <p class="fieldset">
                                         <label class="image-replace cd-password" for="signup-password">Confirmar contraseña</label>
                                         <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Confirmar contraseña">
-                                        <a href="#0" class="hide-password">Show</a>
+                                        <a href="javascript:;" class="hide-password">Show</a>
                                         <span class="cd-error-message">¡Error no concuerda con tu contraseña!</span>
                                     </p>
 
                                     <p class="fieldset">
                                         <input type="checkbox" id="accept-terms">
-                                        <label for="accept-terms">Acepto los <a href="#0">Terminos y condiciones</a></label>
+                                        <label for="accept-terms">Acepto los <a href="javascript:;">Terminos y condiciones</a></label>
                                         <img class="u-linkedinbutton" src="assets/img/Sign-In-Small---Active.png">
                                     </p>
 
@@ -89,7 +89,7 @@
                                     </p>
                                 </form>
 
-                                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                                <!-- <a href="javascript:;" class="cd-close-form">Close</a> -->
                             </div> <!-- cd-signup -->
 
                             <div id="cd-reset-password"> <!-- reset password form -->
@@ -107,9 +107,9 @@
                                     </p>
                                 </form>
 
-                                <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+                                <p class="cd-form-bottom-message"><a href="javascript:;">Back to log-in</a></p>
                             </div> <!-- cd-reset-password -->
-                            <a href="#0" class="cd-close-form">Close</a>
+                            <a href="javascript:;" class="cd-close-form">Close</a>
                         </div> <!-- cd-user-modal-container -->
                     </div> <!-- cd-user-modal -->
         <div id="header-wrap">
@@ -127,13 +127,16 @@
 
                 <!-- Primary Navigation
                 ============================================= -->
-                <nav id="primary-menu" class="main-nav style-3">
-
-                    <ul >
-                        <li ><a class="cd-signin" href="#0">Ingresar</a></li>
-                        <li ><a class="cd-signup" href="#0">Registrarse</a></li>
-                        <li class="current"><a href="empresas/empleador.html">Para Empleadores</a></li>
-                    </ul>
+                <nav id="primary-menu" class="main-nav-2 style-3">
+                  <ul>
+                    <li class="current">{{#link-to "companies-index"}}Para Empleadores{{/link-to}}</li>
+                  </ul>
+                </nav><!-- #primary-menu end -->
+                <nav id="primary-menu" class="main-nav style-3 main-nav-no-margin">
+                  <ul>
+                    <li ><a class="cd-signin" href="javascript:;">Ingresar</a></li>
+                    <li ><a class="cd-signup" href="javascript:;">Registrarse</a></li>
+                  </ul>
                 </nav><!-- #primary-menu end -->
 
 

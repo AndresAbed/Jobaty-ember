@@ -309,13 +309,13 @@ xsigin/signup popup
   background-position: 50% 0;
 }
 .cd-form label.cd-username {
-  background-image: url("../img/cd-icon-username.svg");
+  background-image: url("img/cd-icon-username.svg");
 }
 .cd-form label.cd-email {
-  background-image: url("../img/cd-icon-email.svg");
+  background-image: url("img/cd-icon-email.svg");
 }
 .cd-form label.cd-password {
-  background-image: url("../img/cd-icon-password.svg");
+  background-image: url("img/cd-icon-password.svg");
 }
 .cd-form input {
   margin: 0;
@@ -1631,7 +1631,7 @@ body.stretched #header.full-header .container {
 
 #primary-menu ul ul > li.sub-menu > a,
 #primary-menu ul ul > li.sub-menu:hover > a {
-	background-image: url("img/icons/submenu.png");
+	background-image: url("images/icons/submenu.png");
 	background-position: right center;
 	background-repeat: no-repeat;
 }
@@ -1901,7 +1901,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
 
 #primary-menu.sub-title > ul > li,
 #primary-menu.sub-title.style-2 > div > ul > li {
-	background: url("img/icons/menu-divider.png") no-repeat right center;
+	background: url("images/icons/menu-divider.png") no-repeat right center;
 	margin-left: 1px;
 }
 
@@ -2709,6 +2709,19 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 	color: #222;
 }
 
+.companies-arrow {
+  position: absolute;
+  z-index: 3;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  text-align: center;
+  color: #222;
+}
+
 
 /* ----------------------------------------------------------------
 	Side Header
@@ -3080,7 +3093,7 @@ body.side-panel-open .body-overlay {
 	pointer-events: auto;
 }
 
-body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-overlay:hover { cursor: url('img/icons/close.png') 15 15, default; }
+body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-overlay:hover { cursor: url('images/icons/close.png') 15 15, default; }
 
 
 /* ----------------------------------------------------------------
@@ -3197,7 +3210,7 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 	width:100%;
 	height:100%;
 	margin: 0;
-	background: url('img/pattern2.png') repeat;
+	background: url('images/pattern2.png') repeat;
 }
 
 .swiper_wrapper .swiper-slide {
@@ -3289,7 +3302,7 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 	top: 0;
 	left: 0;
 	z-index: 5;
-	background: transparent url('img/grid.png') repeat;
+	background: transparent url('images/grid.png') repeat;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -3706,7 +3719,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 -----------------------------------------------------------------*/
 
 #page-title.page-title-pattern {
-	background-image: url('img/pattern.png');
+	background-image: url('images/pattern.png');
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
@@ -3732,7 +3745,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 
 #page-title.page-title-parallax {
 	background-color: transparent;
-	background-image: url('img/parallax/parallax-bg.jpg');
+	background-image: url('images/parallax/parallax-bg.jpg');
 	background-attachment: fixed;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
@@ -8665,7 +8678,7 @@ body:not(.device-touch) .social-icon {
 	top: 0;
 	left: 0;
 	text-align: center;
-	background: rgba(0,0,0,0.2) url('img/grid.png') repeat;
+	background: rgba(0,0,0,0.2) url('images/grid.png') repeat;
 }
 
 .i-overlay img,
@@ -10623,7 +10636,7 @@ body:not(.device-touch) .rounded-skill {
 	top: 50%;
 	margin-left: -32px;
 	margin-top: -32px;
-	background: url("img/icons/play.png") no-repeat;
+	background: url("images/icons/play.png") no-repeat;
 	cursor: pointer;
 	z-index: 1;
 	-webkit-backface-visibility: hidden;
@@ -11317,7 +11330,7 @@ label.error { display: none !important; }
 /* Fancy Title - Bottom Short Border
 -----------------------------------------------------------------*/
 
-.fancy-title.title-dotted-border { background: url('img/icons/dotted.png') repeat-x center; }
+.fancy-title.title-dotted-border { background: url('images/icons/dotted.png') repeat-x center; }
 
 
 /* Sub Heading
@@ -12080,7 +12093,7 @@ body:not(.device-touch) .tagcloud a {
 
 .widget_recent_comments li {
 	display: block;
-	background: url("img/icons/widget-comment.png") left top no-repeat;
+	background: url("images/icons/widget-comment.png") left top no-repeat;
 	padding: 4px 0 4px 20px;
 }
 
@@ -12093,7 +12106,7 @@ body:not(.device-touch) .tagcloud a {
 .widget_pages li a,
 .widget_rss li a,
 .widget_recent_comments li a {
-	background: url("img/icons/widget-link.png") left top no-repeat;
+	background: url("images/icons/widget-link.png") left top no-repeat;
 	border: none !important;
 	color: #444;
 	font-size: 14px;
@@ -13667,7 +13680,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark #primary-menu:not(.not-dark) ul ul > li.sub-menu > a,
 .dark #primary-menu:not(.not-dark) ul ul > li.sub-menu:hover > a,
 #primary-menu.dark ul ul > li.sub-menu > a,
-#primary-menu.dark ul ul > li.sub-menu:hover > a { background-image: url("../img/icons/submenu-dark.png"); }
+#primary-menu.dark ul ul > li.sub-menu:hover > a { background-image: url("../images/icons/submenu-dark.png"); }
 
 .dark #primary-menu:not(.not-dark) ul li .mega-menu-content.col-2 > ul,
 .dark #primary-menu:not(.not-dark) ul li .mega-menu-content.col-3 > ul,
@@ -13740,7 +13753,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark .top-cart-action { border-top-color: #3F3F3F; }
 
 .dark .one-page-arrow,
-.one-page-arrow.dark { color: #FFF; }
+.one-page-arrow.dark, .companies-arrow { color: #FFF; }
 
 
 .dark.side-header #header {
@@ -13805,7 +13818,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 
 .dark .breadcrumb a:hover { color: #EEE; }
 
-.dark #page-title.page-title-pattern { background-image: url('../img/pattern2.png'); }
+.dark #page-title.page-title-pattern { background-image: url('../images/pattern2.png'); }
 
 
 .dark #portfolio-filter { border-color: rgba(255,255,255,0.08); }
@@ -14383,7 +14396,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 	color: #CCC;
 }
 
-.dark .owl-carousel.owl-loading { background-image: url('../img/preloader-dark.gif'); }
+.dark .owl-carousel.owl-loading { background-image: url('../images/preloader-dark.gif'); }
 
 .dark .owl-theme .owl-controls .owl-nav [class*=owl-] {
 	border-color: transparent;
@@ -14469,7 +14482,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 
 .dark .preloader,
 .dark .preloader2,
-.dark .form-process { background-image: url('../img/preloader-dark.gif'); }
+.dark .form-process { background-image: url('../images/preloader-dark.gif'); }
 
 .dark .form-process { background-color: transparent; }
 
@@ -14530,7 +14543,7 @@ body #side-panel.dark #side-panel-trigger-close a {
 	color: #FFF !important;
 }
 
-.dark .widget_recent_comments li { background-image: url("../img/icons/widget-comment-dark.png"); }
+.dark .widget_recent_comments li { background-image: url("../images/icons/widget-comment-dark.png"); }
 
 .dark .widget_nav_menu li a,
 .dark .widget_links li a,
@@ -14542,7 +14555,7 @@ body #side-panel.dark #side-panel-trigger-close a {
 .dark .widget_pages li a,
 .dark .widget_rss li a {
 	color: #CCC;
-	background-image: url("../img/icons/widget-link-dark.png");
+	background-image: url("../images/icons/widget-link-dark.png");
 }
 
 .dark .widget_nav_menu li a:hover,
@@ -15149,7 +15162,7 @@ body #side-panel.dark #side-panel-trigger-close a {
 	.dark #primary-menu:not(.not-dark) ul li .mega-menu-content.style-2 li { border-top-color: rgba(255,255,255,0.1) !important; }
 
 	.dark #primary-menu:not(.not-dark) > ul > li.sub-menu > a,
-	.dark #primary-menu:not(.not-dark) > .container > ul > li.sub-menu > a { background-image: url("../img/icons/submenu-dark.png"); }
+	.dark #primary-menu:not(.not-dark) > .container > ul > li.sub-menu > a { background-image: url("../images/icons/submenu-dark.png"); }
 
 	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul li,
 	body:not(.dark) #header:not(.dark) #header-wrap:not(.dark) #primary-menu ul ul,
@@ -15944,7 +15957,7 @@ body #side-panel.dark #side-panel-trigger-close a {
 
 	#primary-menu > ul > li.sub-menu > a,
 	#primary-menu > .container > ul > li.sub-menu > a {
-		background-image: url("../img/icons/submenu.png");
+		background-image: url("../images/icons/submenu.png");
 		background-position: right center;
 		background-repeat: no-repeat;
 	}
@@ -17341,17 +17354,17 @@ only screen and (                min-resolution: 2dppx) {
 	.preloader,
 	.preloader2,
 	.form-process {
-		background-image: url('../img/preloader@2x.gif');
+		background-image: url('../images/preloader@2x.gif');
 		background-size: 24px 24px;
 	}
 
 	.dark .owl-carousel.owl-loading,
 	.dark .preloader,
 	.dark .preloader2,
-	.dark .form-process { background-image: url('../img/preloader-dark@2x.gif'); }
+	.dark .form-process { background-image: url('../images/preloader-dark@2x.gif'); }
 
 	.widget_recent_comments li {
-		background-image: url("../img/icons/widget-comment@2x.png");
+		background-image: url("../images/icons/widget-comment@2x.png");
 		background-size: 15px 26px;
 	}
 
@@ -17364,11 +17377,11 @@ only screen and (                min-resolution: 2dppx) {
 	.widget_pages li a,
 	.widget_rss li a,
 	.widget_recent_comments li a {
-		background-image: url("../img/icons/widget-link@2x.png");
+		background-image: url("../images/icons/widget-link@2x.png");
 		background-size: 4px 20px;
 	}
 
-	.dark .widget_recent_comments li { background-image: url("../img/icons/widget-comment-dark@2x.png"); }
+	.dark .widget_recent_comments li { background-image: url("../images/icons/widget-comment-dark@2x.png"); }
 
 	.dark .widget_nav_menu li a,
 	.dark .widget_links li a,
@@ -17378,7 +17391,7 @@ only screen and (                min-resolution: 2dppx) {
 	.dark .widget_categories li a,
 	.dark .widget_pages li a,
 	.dark .widget_rss li a,
-	.dark .widget_recent_comments li a { background-image: url("../img/icons/widget-link-dark@2x.png"); }
+	.dark .widget_recent_comments li a { background-image: url("../images/icons/widget-link-dark@2x.png"); }
 
 }
 
