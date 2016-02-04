@@ -6,6 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('companies-index', { path: '/empresas' });
 });
 
 export default Router;
