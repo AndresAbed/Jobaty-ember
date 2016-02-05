@@ -13,7 +13,33 @@
                                 <li><a href="javascript:;">Registrarse</a></li>
                             </ul>
                             <div id="cd-login"> <!-- log in form -->
-                              {{employee-singin-form}}
+                              <form class="cd-form">
+                                <p class="fieldset">
+                                  <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                                  {{input type="email" class="full-width has-padding has-border" valueBinding="email" 
+                                  id="signin-email" placeholder="E-mail"}}
+                                  <span class="cd-error-message">¡Error Email no registrado!</span>
+                                </p>
+                                <p class="fieldset">
+                                  <label class="image-replace cd-password" for="signin-password">Contraseña</label>
+                                  {{input type="password" class="full-width has-padding has-border" valueBinding="password"
+                                  id="signin-password" 
+                                  placeholder="Contraseña"}}
+                                  <a href="javascript:;" class="hide-password">Show</a>
+                                  <span class="cd-error-message">¡Error tu contraseña es equivocada!</span>
+                                </p>
+                                <p class="fieldset">
+                                  {{input type="checkbox" id="remember-me" checked=true}}
+                                  <label for="remember-me">¡Recuerdame!</label>
+                                  <img class="u-linkedinbutton" src="assets/img/Sign-In-Small---Active.png">
+                                </p>
+                                 <p class="fieldset">
+                                  <a href="user-recover-password.html">Recuperar contraseña</a>
+                                </p>
+                                <p class="fieldset">
+                                  <button {{action 'loginUser'}} class="full-width">Iniciar sesión</button>
+                                </p>
+                              </form>
                               <p class="cd-form-bottom-message"><a href="javascript:;">¿Olvidaste tu contraseña?</a></p>
                             </div> <!-- cd-login -->
                             <div id="cd-signup"> <!-- sign up form -->
