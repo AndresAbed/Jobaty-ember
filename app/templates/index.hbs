@@ -46,23 +46,23 @@
                               <form class="cd-form" {{action "signup_employee" on="submit"}}>
                                 <p class="fieldset sideby">
                                   <label class="image-replace cd-username" for="signup-username">Nombre</label>
-                                  {{input class="full-width has-padding has-border" type="text" placeholder="Nombres"}}
+                                  {{input class="full-width has-padding has-border" type="text" valueBinding="name" placeholder="Nombres"}}
                                   <span class="cd-error-message">¡Error ingrese sus nombres!</span>
                                 </p>
                                  <p class="fieldset sideby">
                                   <label class="image-replace cd-username" for="signup-username">Apellidos</label>
-                                  {{input class="full-width has-padding has-border" type="text" placeholder="Apellidos"}}
+                                  {{input class="full-width has-padding has-border" type="text" valueBinding="lastname" placeholder="Apellidos"}}
                                   <span class="cd-error-message">¡Error ingrese sus Apellidos!</span>
                                 </p>
                                 <p class="fieldset">
                                   <label class="image-replace cd-email" for="signup-email">E-mail</label>
                                   {{input class="full-width has-padding has-border" id="signup-email" 
-                                  type="email" placeholder="E-mail"}}
+                                  type="email" valueBinding="email" placeholder="E-mail"}}
                                   <span class="cd-error-message">¡Error ingrese un mail valido!</span>
                                 </p>
                                 <p class="fieldset">
                                   <label class="image-replace cd-password" for="signup-password">Contraseña</label>
-                                  {{input class="full-width has-padding has-border" type="password" placeholder="Contraseña"}}
+                                  {{input class="full-width has-padding has-border" type="password" valueBinding="password" placeholder="Contraseña"}}
                                   <a href="javascript:;" class="hide-password">Show</a>
                                   <span class="cd-error-message">¡Error tu contraseña tiene que ser al menos 8 caracteres!</span>
                                 </p>
