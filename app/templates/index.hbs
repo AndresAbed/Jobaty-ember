@@ -13,7 +13,7 @@
                                 <li><a href="javascript:;">Registrarse</a></li>
                             </ul>
                             <div id="cd-login"> <!-- log in form -->
-                              <form class="cd-form">
+                              <form class="cd-form" {{action "loginUser" on="submit"}}>
                                 <p class="fieldset">
                                   <label class="image-replace cd-email" for="signin-email">E-mail</label>
                                   {{input type="email" class="full-width has-padding has-border" valueBinding="email" 
@@ -37,7 +37,7 @@
                                   <a href="user-recover-password.html">Recuperar contraseña</a>
                                 </p>
                                 <p class="fieldset">
-                                  <button {{action 'loginUser'}} class="full-width">Iniciar sesión</button>
+                                  {{input class="full-width" value="Iniciar sesión" type="submit"}}
                                 </p>
                               </form>
                               <p class="cd-form-bottom-message"><a href="javascript:;">¿Olvidaste tu contraseña?</a></p>
