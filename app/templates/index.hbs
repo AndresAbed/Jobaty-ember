@@ -14,6 +14,9 @@
                             </ul>
                             <div id="cd-login"> <!-- log in form -->
                               <form class="cd-form" {{action "login_user" on="submit"}}>
+                                {{#if loginFailed}}
+                                  <div class="alert">Invalid username or password.</div>
+                                {{/if}}
                                 <p class="fieldset">
                                   <label class="image-replace cd-email" for="signin-email">E-mail</label>
                                   {{input type="email" class="full-width has-padding has-border" valueBinding="email" 
@@ -37,7 +40,7 @@
                                   <a href="user-recover-password.html">Recuperar contraseña</a>
                                 </p>
                                 <p class="fieldset">
-                                  {{input class="full-width" value="Iniciar sesión" type="submit"}}
+                                  {{input class="full-width" bindAttr disable="isProcessing" id="signin-employee-input" value="Iniciar sesión" type="submit"}}
                                 </p>
                               </form>
                               <p class="cd-form-bottom-message"><a href="javascript:;">¿Olvidaste tu contraseña?</a></p>
