@@ -47,6 +47,7 @@
 
 																<div id="cd-signup"> <!-- sign up form -->
 																		<form class="cd-form" {{action "signup_company" on="submit"}}>
+																				<div class="company-sigup-messages"></div>
 																				<p class="fieldset">
 																						<label class="image-replace cd-username" for="signup-username">Nombre Empresa</label>
 																						{{input class="full-width has-padding has-border" id="signup-username" type="text" valueBinding="companyName" placeholder="Nombre Empresa"}}
