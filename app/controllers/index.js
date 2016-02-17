@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions: {
     login_user: function() {
+    	$(".employee-sigin-messages").html("");
       document.getElementById("signin-employee-input").value = "Iniciando sesión...";
       var user = this.store.createRecord('login-user', {
         email: this.get('email'),
@@ -12,8 +13,8 @@ export default Ember.Controller.extend({
         //this.transitionToRoute('posts')
         document.location = "/test";
       }.bind(this), function(response){
+      	$(".employee-sigin-messages").html("Email o contraseña invalidos");
         document.getElementById("signin-employee-input").value = "Iniciar sesión";
-        console.log(response.errors[0].status);
       }.bind(this));
     },
     signup_employee: function() {
