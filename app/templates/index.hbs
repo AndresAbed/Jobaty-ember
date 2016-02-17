@@ -14,9 +14,7 @@
                             </ul>
                             <div id="cd-login"> <!-- log in form -->
                               <form class="cd-form" {{action "login_user" on="submit"}}>
-                                {{#if loginFailed}}
-                                  <div class="alert">Invalid username or password.</div>
-                                {{/if}}
+                                <div class="employee-sigin-messages"></div>
                                 <p class="fieldset">
                                   <label class="image-replace cd-email" for="signin-email">E-mail</label>
                                   {{input type="email" class="full-width has-padding has-border" valueBinding="email" 
@@ -47,6 +45,7 @@
                             </div> <!-- cd-login -->
                             <div id="cd-signup"> <!-- sign up form -->
                               <form class="cd-form" {{action "signup_employee" on="submit"}}>
+                                <div class="employee-sigup-messages"></div>
                                 <p class="fieldset sideby">
                                   <label class="image-replace cd-username" for="signup-username">Nombre</label>
                                   {{input class="full-width has-padding has-border" type="text" valueBinding="name" placeholder="Nombres"}}
@@ -80,7 +79,7 @@
                                   <label for="accept-terms">Acepto los <a href="javascript:;">Terminos y condiciones</a></label>
                                 </p>
                                 <p class="fieldset">
-                                  {{input class="full-width has-padding" type="submit" value="Registrarse"}}
+                                  {{input class="full-width has-padding" id="signup-employee-input" type="submit" value="Registrarse"}}
                                 </p>
                               </form>
                             </div> <!-- cd-signup -->
