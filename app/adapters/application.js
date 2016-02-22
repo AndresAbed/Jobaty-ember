@@ -5,5 +5,8 @@ export default DS.JSONAPIAdapter.extend({
   headers: {
     "accept": "application/json",
     "content-type": "application/json"
+  },
+  pathForType: function(type) {
+    return Ember.String.underscore(type);
   }
 });
