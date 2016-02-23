@@ -27,7 +27,6 @@ module.exports = function(defaults) {
   app.import('vendor/css/fonts.css');
   app.import('vendor/css/pages-icons.css');
   app.import('vendor/css/pages.css');
-  app.import('vendor/css/pages.min.css');
   app.import('vendor/css/reset.css');
   app.import('vendor/css/responsive.css');
   app.import('vendor/css/style-empresas.css');
