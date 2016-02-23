@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('companies-index', { path: '/empresas' });
   this.route('employee', { path: '/talento' }, function() {
     this.route('acepted', { path: '/aceptadas' });
+    this.route('contact', { path: '/contacto' });
     this.route('offers', { path: '/ofertas' });
     this.route('profile', { path: '/perfil' });
     this.route('proposals', { path: '/propuestas' });
