@@ -13,19 +13,17 @@
                                 <li><a href="javascript:;">Registrarse</a></li>
                             </ul>
                             <div id="cd-login"> <!-- log in form -->
-                              <form class="cd-form" {{action "login_user" on="submit"}}>
+                              <form class="cd-form" id="employee_signin" {{action "login_employee" on="submit"}}>
                                 <div class="employee-sigin-messages"></div>
                                 <p class="fieldset">
                                   <label class="image-replace cd-email" for="signin-email">E-mail</label>
-                                  {{input type="email" class="full-width has-padding has-border" value=email 
+                                  {{input type="email" class="full-width has-padding has-border" value=login_email 
                                   id="signin-email" placeholder="E-mail"}}
                                   <span class="cd-error-message">¡Error Email no registrado!</span>
                                 </p>
                                 <p class="fieldset">
                                   <label class="image-replace cd-password" for="signin-password">Contraseña</label>
-                                  {{input type="password" class="full-width has-padding has-border" value=password
-                                  id="signin-password" 
-                                  placeholder="Contraseña"}}
+                                  {{input type="password" class="full-width has-padding has-border" value=login_password id="signin-password" placeholder="Contraseña"}}
                                   <a href="javascript:;" class="hide-password">Show</a>
                                   <span class="cd-error-message">¡Error tu contraseña es equivocada!</span>
                                 </p>
@@ -44,7 +42,7 @@
                               <p class="cd-form-bottom-message"><a href="javascript:;">¿Olvidaste tu contraseña?</a></p>
                             </div> <!-- cd-login -->
                             <div id="cd-signup"> <!-- sign up form -->
-                              <form class="cd-form" {{action "signup_employee" on="submit"}}>
+                              <form class="cd-form" id="employee-signup" {{action "signup_employee" on="submit"}}>
                                 <div class="employee-sigup-messages"></div>
                                 <p class="fieldset sideby">
                                   <label class="image-replace cd-username" for="signup-username">Nombre</label>
@@ -59,12 +57,12 @@
                                 <p class="fieldset">
                                   <label class="image-replace cd-email" for="signup-email">E-mail</label>
                                   {{input class="full-width has-padding has-border" id="signup-email" 
-                                  type="email" value=email placeholder="E-mail"}}
+                                  type="email" value=signup_email placeholder="E-mail"}}
                                   <span class="cd-error-message">¡Error ingrese un mail valido!</span>
                                 </p>
                                 <p class="fieldset">
                                   <label class="image-replace cd-password" for="signup-password">Contraseña</label>
-                                  {{input class="full-width has-padding has-border" type="password" value=password placeholder="Contraseña"}}
+                                  {{input class="full-width has-padding has-border" type="password" value=signup_password placeholder="Contraseña"}}
                                   <a href="javascript:;" class="hide-password">Show</a>
                                   <span class="cd-error-message">¡Error tu contraseña tiene que ser al menos 8 caracteres!</span>
                                 </p>
