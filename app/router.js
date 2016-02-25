@@ -22,7 +22,7 @@ Router.map(function() {
     this.route('closed-proposals', { path: '/propuestas-cerradas' });
     this.route('new-position', { path: '/nuevo-puesto' });
     this.route('profile', { path: '/perfil' });
-    this.route('talento', { path: '/talentos' });
+    this.route('talents', { path: '/talentos' });
   });
 });
 
