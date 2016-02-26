@@ -2,6 +2,21 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 	actions:{
+    login_company: function() {
+      $(".company-sigin-messages").html("");
+      document.getElementById("signin-company-input").value = "Iniciando sesión...";
+      var company = this.store.createRecord('login-company', {
+        email: this.get('login_email'),
+        password: this.get('login_password')
+      });
+      company.save().then(function() {
+        this.transitionToRoute('company.talents');
+      }.bind(this), function(response){
+        $(".company-sigin-messages").html("Email o contraseña invalidos");
+        $("#company_signin")[0].reset();
+        document.getElementById("signin-company-input").value = "Iniciar sesión";
+      }.bind(this));
+    },
 		signup_company: function() {
 			$(".company-sigup-messages").html("");
 			document.getElementById("signup-company-input").value = "Registrando...";
