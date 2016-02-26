@@ -14,18 +14,19 @@
 																</ul>
 
 																<div id="cd-login"> <!-- log in form -->
-																		<form class="cd-form">
+																		<form class="cd-form" id="company_signin" {{action "login_company" on="submit"}}>
+																				<div class="company-sigin-messages"></div>
 																				<p class="fieldset">
 																						<label class="image-replace cd-email" for="signin-email">E-mail</label>
-																						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+																						{{input type="email" class="full-width has-padding has-border" value=login_email id="signin-email" placeholder="E-mail"}}
 																						<span class="cd-error-message">¡Error Email no registrado!</span>
 																				</p>
 
 																				<p class="fieldset">
-																						<label class="image-replace cd-password" for="signin-password">Contraseña</label>
-																						<input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Contraseña">
-																						<a href="javascript:;" class="hide-password">Show</a>
-																						<span class="cd-error-message">¡Error tu contraseña es equivocada!</span>
+																					<label class="image-replace cd-password" for="signin-password">Contraseña</label>
+																					{{input type="password" class="full-width has-padding has-border" value=login_password id="signin-password" placeholder="Contraseña"}}
+																					<a href="javascript:;" class="hide-password">Show</a>
+																					<span class="cd-error-message">¡Error tu contraseña es equivocada!</span>
 																				</p>
 
 																				<p class="fieldset">
@@ -37,7 +38,7 @@
 																				</p>
 
 																				<p class="fieldset">
-																						<input class="full-width" type="submit" value="Login">
+																					{{input class="full-width" id="signin-company-input" value="Iniciar sesión" type="submit"}}
 																				</p>
 																		</form>
 																		
