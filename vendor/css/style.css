@@ -17392,3 +17392,10 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
   #logo a.standard-logo { display: none; }
   #logo a.retina-logo { display: inline-block; }
 }
+
+.employee-sigin-messages,
+.employee-signup-messages,
+.company-sigin-messages,
+.company-signup-messages{
+  color: black;
+}
