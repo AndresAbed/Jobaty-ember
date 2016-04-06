@@ -22,7 +22,7 @@ export default Ember.Controller.extend({
     	document.getElementById("signup-employee-input").value = "Registrando...";
       var employee = this.store.createRecord('signup-employee', {
         name: this.get('name'),
-        lastName: this.get('lastname'),
+        last_name: this.get('lastname'),
         email: this.get('signup_email'),
         password: this.get('signup_password')
       });
