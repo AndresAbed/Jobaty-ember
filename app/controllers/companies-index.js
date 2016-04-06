@@ -18,7 +18,7 @@ export default Ember.Controller.extend({
       }.bind(this));
     },
 		signup_company: function() {
-			$(".company-sigup-messages").html("");
+			$(".company-signup-messages").html("");
 			document.getElementById("signup-company-input").value = "Registrando...";
 			var company = this.store.createRecord('signup-company', {
 				companyName: this.get('companyName'),
@@ -26,16 +26,16 @@ export default Ember.Controller.extend({
 				password: this.get('password')
 			});
 			company.save().then(function() {
-				$(".company-sigup-messages").html("Cuenta registrada");
+				$(".company-signup-messages").html("Cuenta registrada");
 				document.getElementById("signup-company-input").value = "Registrarse";
 			}.bind(this), function(response) {
 				if (response.errors[0].status == 503) {
-					$(".company-sigup-messages").html("Datos inválidos");
+					$(".company-signup-messages").html("Datos inválidos");
 					document.getElementById("signup-company-input").value = "Registrarse";
 				}
 				else{
 					if (response.errors[0].status == 409) {
-						$(".company-sigup-messages").html("El email ya está en uso");
+						$(".company-signup-messages").html("El email ya está en uso");
 						document.getElementById("signup-company-input").value = "Registrarse";
 					}
 				};

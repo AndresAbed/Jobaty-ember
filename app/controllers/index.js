@@ -12,13 +12,13 @@ export default Ember.Controller.extend({
       user.save().then(function() {
         this.transitionToRoute('employee.offers');
       }.bind(this), function(response){
-      	$(".employee-sigin-messages").html("Email o contraseña invalidos");
-        $("#employee-signin")[0].reset();
+        $(".employee-sigin-messages").html("Email o contraseña invalidos");
         document.getElementById("signin-employee-input").value = "Iniciar sesión";
+        $("#employee-signin")[0].reset();
       }.bind(this));
     },
     signup_employee: function() {
-    	$(".employee-sigup-messages").html("");
+    	$(".employee-signup-messages").html("");
     	document.getElementById("signup-employee-input").value = "Registrando...";
       var employee = this.store.createRecord('signup-employee', {
         name: this.get('name'),
@@ -27,18 +27,18 @@ export default Ember.Controller.extend({
         password: this.get('signup_password')
       });
       employee.save().then(function() {
-      	$(".employee-sigup-messages").html("Cuenta registrada");
+      	$(".employee-signup-messages").html("Cuenta registrada");
         $("#employee-signup")[0].reset();
         document.getElementById("signup-employee-input").value = "Registrarse";
       }.bind(this), function(response) {
       	if (response.errors[0].status == 503) {
-      		$(".employee-sigup-messages").html("Datos inválidos");
+      		$(".employee-signup-messages").html("Datos inválidos, completar todos los campos.");
           $("#employee-signup")[0].reset();
       		document.getElementById("signup-employee-input").value = "Registrarse";
       	}
       	else{
       		if (response.errors[0].status == 409) {
-      			$(".employee-sigup-messages").html("El email ya está en uso");
+      			$(".employee-signup-messages").html("El email ya está en uso");
             $("#employee-signup")[0].reset();
       			document.getElementById("signup-employee-input").value = "Registrarse";
       		}
