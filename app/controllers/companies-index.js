@@ -28,15 +28,18 @@ export default Ember.Controller.extend({
 			company.save().then(function() {
 				$(".company-signup-messages").html("Cuenta registrada");
 				document.getElementById("signup-company-input").value = "Registrarse";
+        $("#company_signup")[0].reset();
 			}.bind(this), function(response) {
 				if (response.errors[0].status == 503) {
 					$(".company-signup-messages").html("Datos inválidos");
 					document.getElementById("signup-company-input").value = "Registrarse";
+          $("#company_signup")[0].reset();
 				}
 				else{
 					if (response.errors[0].status == 409) {
 						$(".company-signup-messages").html("El email ya está en uso");
 						document.getElementById("signup-company-input").value = "Registrarse";
+            $("#company_signup")[0].reset();
 					}
 				};
 			}.bind(this));
