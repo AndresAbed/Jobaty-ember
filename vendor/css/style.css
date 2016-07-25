@@ -3092,6 +3092,7 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: 100vh;
 }
 
 .slider-parallax,
@@ -3226,13 +3227,14 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 #slider .container {
   position: relative;
   height: 100%;
+  top: 15%;
 }
 
 #slider.canvas-slider .swiper-slide img { width: 100%; }
 
 #slider.canvas-slider a {
   display: block;
-  height: 100%;
+  height: 100vh;
 }
 
 
